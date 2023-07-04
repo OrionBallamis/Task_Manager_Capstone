@@ -1,0 +1,84 @@
+.LandingPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(201, 89, 45);
+}
+
+.LandingContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 60%;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.welcome {
+    color: black;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.LogInSignUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+    width: 30%;
+}
+
+.AuthLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    background-color: rgb(64, 64, 64);
+    border-radius: 30px;
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.AuthLinks:hover {
+    background-color:rgb(83, 83, 83) ;
+    color: rgb(36, 36, 36);
+}
+
+.LogIn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+    width: 30%;
+}
+
+.SignUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+    width: 30%;
+}
+
+.TextBox {
+    display: flex;
+    border: none;
+    border-bottom: 1px solid;
+    border-color: black;
+    background-color: transparent;
+    font-size: 20px;
+    color: black;
+}
+
+.TextBox:focus {
+    outline: none;
+}

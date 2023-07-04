@@ -1,0 +1,45 @@
+.TaskContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-width: 25%;
+    height: 50%;
+    background-color: white;
+    padding: 5px;
+    margin-top: 20px;
+    color: #000;
+    border-radius: 10px;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.TaskName{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    height: 100%;
+    width: 380px;
+}
+
+
+
+textarea {
+    max-width: 375px;
+    min-width: 375px;
+    max-height: 100px;
+    min-height: 100px;
+}
+
+.priority {
+    display: flex;
+    background-color: rgb(56, 56, 56);
+    font-weight: 900;
+    justify-content: center;
+}
