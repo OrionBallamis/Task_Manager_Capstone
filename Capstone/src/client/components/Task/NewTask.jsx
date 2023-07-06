@@ -2,17 +2,23 @@ import './Task.css'
 import { useState } from 'react'
 import axios from 'axios'
 
-export const TaskCard = () => {
+export const NewTaskCard = () => {
 
-    const [title, setTitle] = useState('')
+    const [name, setName] = useState('')
     const [body, setBody] = useState('')
     const [priority, setPriority] = useState('less important')
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        const task = { title, body, priority }
+        const task = { name, body, priority }
+        axios.post('/addTask', [name, body, priority])
+            .then((res) => {
 
+        }).catch(err => console.log(err))
         console.log(task)
+        setName('')
+        setBody('')
+        setPriority('less important')
     }
 
     return (
@@ -26,8 +32,8 @@ export const TaskCard = () => {
                 <input 
                     type="text"
                     required
-                    value={title}
-                    onChange={(e) => setTitle(e.target.value)}
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                 />
                 <label>Task:</label>
                 <textarea

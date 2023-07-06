@@ -33,22 +33,30 @@
     width: 30%;
 }
 
-.AuthLinks {
+.AuthLinks, .AuthLinksSingle{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 40%;
-    background-color: rgb(64, 64, 64);
+    background-color: rgb(86, 86, 86);
+    color: rgb(205, 144, 1);
     border-radius: 30px;
-    color: black;
     font-size: 20px;
     font-weight: 900;
 }
 
-.AuthLinks:hover {
-    background-color:rgb(83, 83, 83) ;
-    color: rgb(36, 36, 36);
+.AuthLinks {
+    width: 100%;
+    height: 40%;
+}
+
+.AuthLinksSingle {
+    width: 30%;
+    height: 10%;
+}
+
+.AuthLinks:hover, .AuthLinksSingle:hover{
+    background-color:rgb(114, 114, 114) ;
+    color: rgb(248, 189, 54);
 }
 
 .LogIn {
